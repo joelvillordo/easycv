@@ -173,7 +173,7 @@ function subirContact(e){
     //guardar en Local Storage   
     var contacto1 = JSON.stringify(contacto);
     localStorage.setItem('contacto', contacto1);
-    abrirNuevoTab('file:///C:/Users/villo/Documents/Carrera%20de%20Desarrollo%20Full%20Stack/Javascript/PROYECTO%20FINAL/modelos/modelo1.html')
+    abrirNuevoTab('https://joelvillordo.github.io/easycv/modelos/modelo1.html')
 }
 boton5.addEventListener("submit", subirContact);
 
