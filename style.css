@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap");
+/*Reseteo CSS*/
+* {
+  margin: 0;
+  padding: 0; }
+
+/*Tipografia de Google Fonts*/
+html {
+  font-size: 0.75em;
+  font-family: 'Merriweather', serif; }
+
+header {
+    color: white;
+  background-color: #1a2250;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20rem; }
+  header img {
+    height: 331.66667px; }
+
+.mobile {
+  display: none; }
+
+.navbar-custom {
+  background: #1a2250 !important;
+  margin: 0 auto; }
+
+.navMenu {
+  background: #1a2250;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .navMenu ul a {
+    color: white;
+    text-decoration: none; }
+  .navMenu ul li {
+    margin-left: 50px;
+    padding: 5px;
+    transition: transform 2s;
+    font-size: 1.75em; }
+  .navMenu ul li:hover {
+    transform: scale(1.1, 1.1); }
+  .navMenu .navbar-toggler {
+    color: white; }
+
+
+.contacto {
+  padding: 50px;
+  font-size: 1.5em;
+  color: white;
+  background-color: white;
+  color: black;
+  text-align: center; }
+  .contacto h2 {
+    font-size: 2em; }
+  .contacto li {
+    list-style: none; }
+  .contacto form {
+    width: 66%;
+    margin: 0 auto; }
+
+
+#resultado{
+  text-align: center;
+  font-size: medium;
+}
+.modal-dialog {
+  color: black; }
+
+footer {
+  background-color: #0a1417;
+  height: 15rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  padding: 3em; }
+  footer .socialmedia img {
+    margin-left: 1em;
+    width: 75px;
+    margin: 10px;
+    transition: 0.75s;
+    border-radius: 50%; }
+  footer .socialmedia img:hover {
+    border: 1px solid white; }

@@ -1,0 +1,14 @@
+DATOS A SOLICITAR AL CLIENTE E INCLUIR EN EL CV
+
+
+-Foto
+-Nombre y apellido
+-Email
+-Telefono 
+-Edad
+- Descripcion opcional sobre mi
+- Educacion
+- Idiomas
+- Experiencia profesional
+- Skills
+- Intereses 

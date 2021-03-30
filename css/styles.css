@@ -1,0 +1,93 @@
+.inputsUsuario {
+  width: 70%;
+  margin: 5px auto;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px; }
+  .inputsUsuario .card {
+    display: inline-block; }
+
+.container {
+  width: 80%;
+  text-align: center; }
+  .container label {
+    display: block; }
+  .container input {
+    margin: 10px auto;
+    display: block; }
+  .container textarea {
+    margin: 0 auto;
+    display: block; }
+
+.disabled {
+  display: none; }
+
+#modelo1 {
+  width: 66%;
+  margin: 5px auto;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px; }
+
+li {
+  list-style: none; }
+
+#foto {
+  grid-area: foto; }
+
+#datosPersonales {
+  grid-area: datos; }
+
+header {
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-areas: "foto datos";
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto; }
+  header div {
+    text-align: center; }
+  header h2 {
+    color: #0040FF; }
+  header h3 {
+    color: #0040FF; }
+
+main {
+  padding: 30px; }
+  main #conocimiento {
+    margin-bottom: 20px;
+    text-align: center;
+    display: grid;
+    grid-template-areas: "habilidades educacion";
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-content: start;
+    border-bottom: 1px lightgrey solid; }
+    main #conocimiento #habilidades {
+      grid-area: habilidades; }
+    main #conocimiento #educacion {
+      grid-area: educacion;
+      border-left: 1px lightgrey solid; }
+    main #conocimiento h2 {
+      color: #0040FF; }
+  main #experiencia {
+    width: 100%;
+    border-bottom: 1px solid lightgrey; }
+    main #experiencia .fecha {
+      color: #00BFFF;
+      font-weight: bold; }
+    main #experiencia h2 {
+      text-align: center;
+      color: #0040FF; }
+
+footer {
+  padding: 20px;
+  text-align: center;
+  display: grid;
+  grid-template-areas: "telefono email ubicacion";
+  grid-template-columns: 1fr 1fr 1fr; }
+  footer #tel {
+    grid-area: telefono; }
+  footer #email {
+    grid-area: email; }
+  footer #ubicacion {
+    grid-area: ubicacion; }

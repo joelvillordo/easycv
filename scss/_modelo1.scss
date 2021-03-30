@@ -1,0 +1,97 @@
+$azul: #0040FF;
+$gris: lightgrey;
+$celeste: #00BFFF;
+
+#modelo1{
+    width: 66%;
+    margin: 5px auto;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+li{
+    list-style: none;
+}
+//Header
+#foto{
+    grid-area: foto;
+}
+#datosPersonales{
+    grid-area: datos;
+}
+
+header{
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-areas: 
+    "foto datos";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    div{
+        text-align: center;
+    }
+    h2{
+        color: $azul;
+    }
+    h3{
+        color: $azul;
+    }
+}
+
+
+//Main
+main{
+    padding: 30px;
+    #conocimiento{
+        margin-bottom: 20px;
+        text-align: center;
+        #habilidades{
+            grid-area: habilidades;
+        }
+        #educacion{
+            grid-area: educacion;
+            border-left: 1px $gris solid;
+        }
+        display: grid;
+        grid-template-areas: 
+        "habilidades educacion";
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-content: start;
+        border-bottom: 1px $gris solid;
+        h2{
+             color: $azul;
+        }
+    }
+    #experiencia{
+        .fecha{
+            color: $celeste;
+            font-weight: bold;
+        }
+        h2{
+            text-align: center;
+            color: $azul;
+        }
+        width: 100%;
+        border-bottom: 1px solid $gris;
+    }
+}
+
+//Footer
+footer{
+    padding: 20px;
+    #tel{
+        grid-area: telefono;
+    }
+    #email{
+        grid-area: email;
+    }
+    #ubicacion{
+        grid-area: ubicacion;
+    }
+    text-align: center;
+    display: grid;
+    grid-template-areas: 
+    "telefono email ubicacion";
+    grid-template-columns: 1fr 1fr 1fr;
+}

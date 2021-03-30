@@ -1,0 +1,30 @@
+.inputsUsuario{
+    width: 70%;
+    margin: 5px auto;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    .card{
+        display: inline-block;
+    }
+}
+
+.container{
+    width: 80%;
+    text-align: center;
+    label{
+        display:block;
+    }
+    input{
+        margin: 10px auto;
+        display:block;
+    }
+    textarea{
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+.disabled{
+    display: none;
+}
