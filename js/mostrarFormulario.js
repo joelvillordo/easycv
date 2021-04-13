@@ -50,7 +50,11 @@ class Contacto{
         this.ubicacion = ubicacion;
     }
 }
-
+//Funcion para guardar en el Local Storage y despues recuperar en el modelo los datos
+function guardarDatos(a){
+    var a = JSON.stringify(a);
+    localStorage.setItem('a', a);
+}
 //Elimino datos del Local Storage cargados anteriormente por el usuario para poder resetear el CV
 function limpiarLocalStorage(a, b, c, d, e){
     localStorage.removeItem(a);
