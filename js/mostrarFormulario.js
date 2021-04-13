@@ -1,15 +1,15 @@
 //Acceso al DOM
-const aboutMe = document.getElementById("aboutMe");
-const skills = document.getElementById("skills");
-const education = document.getElementById("education");
-const works = document.getElementById("works");
-const contact = document.getElementById("contact");
-const loading = document.getElementById("loading");
-const boton1 = document.getElementById("form1");
-const boton2 = document.getElementById("form2");
-const boton3 = document.getElementById("form3");
-const boton4 = document.getElementById("form4");
-const boton5 = document.getElementById("form5");
+const aboutMe = $("#aboutMe");
+const skills = $("#skills");
+const education = $("#education");
+const works = $("#works");
+const contact = $("#contact");
+const loading = $("#loading");
+const boton1 = $("#form1");
+const boton2 = $("#form2");
+const boton3 = $("#form3");
+const boton4 = $("#form4");
+const boton5 = $("#form5");
 
 //Variables, Objetos, Arrays
 let usuario = [];
@@ -56,11 +56,24 @@ function guardarDatos(a){
     var a = JSON.stringify(a);
     localStorage.setItem('a', a);
 }
+
+//Elimino datos del Local Storage cargados anteriormente por el usuario para poder resetear el CV
+function limpiarLocalStorage(a, b, c, d, e){
+    localStorage.removeItem(a);
+    localStorage.removeItem(b);
+    localStorage.removeItem(c);
+    localStorage.removeItem(d);
+    localStorage.removeItem(e);
+}
+
+limpiarLocalStorage('persona', 'habilidades', 'educacion', 'experiencia', 'contacto');
+
+
 //Enviar datos de About y pasar a Skills
 function mostrarSkills(){
     //Escondo el formulario de about y muestro el siguiente
-    aboutMe.style.setProperty('display', 'none');
-    skills.style.setProperty('display', 'block');
+    aboutMe.css('display', 'none');
+    skills.css('display', 'block');
 }
 function subirAbout(e) {
     //Anulo la recarga de la pagina
@@ -79,12 +92,12 @@ function subirAbout(e) {
     var persona1 = JSON.stringify(persona);
     localStorage.setItem('persona', persona1);
 }
-boton1.addEventListener("submit", subirAbout);
+boton1.submit(subirAbout);
 
 //Enviar datos de Skills y pasar a Education
 function mostrarEducation(){
-    skills.style.setProperty('display', 'none');
-    education.style.setProperty('display', 'block');
+    skills.css('display', 'none');
+    education.css('display', 'block');
 }
 //Mismo funcionamiento para guardar las habilidades ingresadas por el usuario
 function subirSkills(e){
@@ -101,12 +114,12 @@ function subirSkills(e){
     var guardarSkills = JSON.stringify(habilidades);
     localStorage.setItem('habilidades', guardarSkills);
 }
-boton2.addEventListener("submit", subirSkills);
+boton2.submit(subirSkills);
 
 //Enviar datos de Education y pasar a Works
 function mostrarWorks(){
-    education.style.setProperty('display', 'none');
-    works.style.setProperty('display', 'block');
+    education.css('display', 'none');
+    works.css('display', 'block');
 }
 function subirEducation(e){
     e.preventDefault();
@@ -122,12 +135,12 @@ function subirEducation(e){
     var educacion1 = JSON.stringify(educacion);
     localStorage.setItem('educacion', educacion1);
 }
-boton3.addEventListener("submit", subirEducation);
+boton3.submit(subirEducation);
 
 //Enviar datos de Works y pasar a Contact
 function mostrarContact(){
-    works.style.setProperty('display', 'none');
-    contact.style.setProperty('display', 'block');
+    works.css('display', 'none');
+    contact.css('display', 'block');
 }
 function subirWorks(e){
     e.preventDefault();
@@ -144,12 +157,12 @@ function subirWorks(e){
     var experiencia1 = JSON.stringify(experiencia);
     localStorage.setItem('experiencia', experiencia1);
 }
-boton4.addEventListener("submit", subirWorks);
+boton4.submit(subirWorks);
 
 //Enviar datos de Contact y pasar al modelo elegido
 function mostrarLoading(){
-    contact.style.setProperty('display', 'none');
-    loading.style.setProperty('display', 'block');
+    contact.css('display', 'none');
+    loading.css('display', 'block');
 }
 //funcion para abrir una nueva tab con el cv armado
 function abrirNuevoTab(url) {
@@ -175,6 +188,6 @@ function subirContact(e){
     localStorage.setItem('contacto', contacto1);
     abrirNuevoTab('https://joelvillordo.github.io/easycv/modelos/modelo1.html')
 }
-boton5.addEventListener("submit", subirContact);
+boton5.submit(subirContact);
 
 
