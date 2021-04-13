@@ -51,12 +51,6 @@ class Contacto{
     }
 }
 
-//Funcion para guardar en el Local Storage y despues recuperar en el modelo los datos
-function guardarDatos(a){
-    var a = JSON.stringify(a);
-    localStorage.setItem('a', a);
-}
-
 //Elimino datos del Local Storage cargados anteriormente por el usuario para poder resetear el CV
 function limpiarLocalStorage(a, b, c, d, e){
     localStorage.removeItem(a);
@@ -80,9 +74,9 @@ function subirAbout(e) {
     e.preventDefault();
     //Recolecto los datos del formulario para crear el HTML
     let datosAbout = e.target;
-    var nombre = datosAbout.children[1].value;
-    var profesion = datosAbout.children[3].value;
-    var sobreMi = datosAbout.children[5].value;
+    var nombre = $("#name").val();
+    var profesion = $("#profession").val();
+    var sobreMi = $("#description").val();
     //Guardo los datos en un objeto y luego los pusheo al array del usuario
     const persona = new Persona(nombre, profesion, sobreMi);
     usuario.push(persona);
@@ -103,9 +97,9 @@ function mostrarEducation(){
 function subirSkills(e){
     e.preventDefault();
     let datosSkills = e.target;
-    var skill1 = datosSkills.children[1].value;
-    var skill2 = datosSkills.children[3].value;
-    var skill3 = datosSkills.children[5].value;
+    var skill1 = $("skill1").val();
+    var skill2 = $("skill2").val();;
+    var skill3 = $("skill3").val();;
     const habilidades = new Habilidades(skill1, skill2, skill3);
     usuario.push(habilidades);
     mostrarEducation();
@@ -124,9 +118,9 @@ function mostrarWorks(){
 function subirEducation(e){
     e.preventDefault();
     const datosEducation = e.target;
-    var instituto = datosEducation.children[1].value;
-    var titulo = datosEducation.children[3].value;
-    var fechaTitulo = datosEducation.children[5].value;
+    var instituto = $("#institucion").val();
+    var titulo = $("#titulo").val();
+    var fechaTitulo = $("#date").val();
     const educacion =  new Educacion(instituto, titulo, fechaTitulo);
     usuario.push(educacion);
     console.log(usuario);
@@ -145,10 +139,10 @@ function mostrarContact(){
 function subirWorks(e){
     e.preventDefault();
     const datosWorks = e.target;
-    var puesto = datosWorks.children[1].value;
-    var empresa = datosWorks.children[3].value;
-    var tiempo = datosWorks.children[5].value;
-    var tareas = datosWorks.children[7].value;
+    var puesto = $("#puesto").val();
+    var empresa = $("#empresa").val();
+    var tiempo = $("#fecha").val();
+    var tareas = $("#tareas").val();
     const experiencia = new Experiencia(puesto, empresa, tiempo, tareas);
     usuario.push(experiencia);
     console.log(usuario);
@@ -175,9 +169,9 @@ function abrirNuevoTab(url) {
 function subirContact(e){
     e.preventDefault();
     const datosContact = e.target;
-    var tel = datosContact.children[1].value;
-    var email = datosContact.children[3].value;
-    var ubicacion = datosContact.children[5].value;
+    var tel = $("#tel").val();
+    var email = $("#email").val();
+    var ubicacion = $("#location").val();
     const contacto = new Contacto(tel, email, ubicacion);
     usuario.push(contacto);
     console.log(usuario);

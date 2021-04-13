@@ -1,7 +1,7 @@
 console.log("javascript cargado");
 
 //Datos identificatorios
-const datosPersonales = document.getElementById("datosPersonales");
+const datosPersonales = $("#datosPersonales");
 var datosUsuario = localStorage.getItem('persona');
 const usuario1 = JSON.parse(datosUsuario);
 
@@ -14,7 +14,7 @@ function datosPrincipales(){
 datosPrincipales();
 
 //Habilidades
-const habilidades = document.getElementById("habilidades");
+const habilidades = $("#habilidades");
 var skillsUsuario = localStorage.getItem('habilidades');
 const habilidades1 = JSON.parse(skillsUsuario);
 
@@ -29,7 +29,7 @@ function habilidadesUsuario(){
 habilidadesUsuario();
 
 //Educacion
-const educacion = document.getElementById("educacion");
+const educacion = $("#educacion");
 var eduUsuario = localStorage.getItem('educacion');
 const educacion1 = JSON.parse(eduUsuario);
 
@@ -46,7 +46,7 @@ function educacionUsuario(){
 educacionUsuario();
 
 //Experiencia
-const experiencia = document.getElementById("experiencia");
+const experiencia = $("#experiencia");
 var expUsuario = localStorage.getItem('experiencia');
 const experiencia1 = JSON.parse(expUsuario);
 
@@ -64,7 +64,7 @@ function experienciaUsuario(){
 experienciaUsuario();
 
 //Contacto
-const contacto = document.getElementById("contacto");
+const contacto = $("#contacto");
 var contactUsuario = localStorage.getItem('contacto');
 const contacto1 = JSON.parse(contactUsuario);
 
