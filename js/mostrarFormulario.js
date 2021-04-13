@@ -180,7 +180,7 @@ function subirContact(e){
     //guardar en Local Storage   
     var contacto1 = JSON.stringify(contacto);
     localStorage.setItem('contacto', contacto1);
-    abrirNuevoTab('https://joelvillordo.github.io/easycv/modelos/modelo1.html')
+    abrirNuevoTab('https://joelvillordo.github.io/easycv/modelos/modelo1.html');
 }
 boton5.submit(subirContact);
 
