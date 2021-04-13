@@ -1,3 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+body {
+  font-family: 'Righteous', cursive; }
+
+header {
+  color: white;
+  background-color: #007a79;
+  height: 15rem;
+  display: flex;
+  align-content: center; }
+  header h1 {
+    text-align: center;
+    font-size: 3rem; }
+  header nav {
+    font-size: 1.25rem;
+    height: 3.5rem;
+    background-color: #007a79; }
+
+footer {
+  background-color: #007a79; }
+
+#aboutUs .carousel img {
+  text-align: center;
+  height: 20rem; }
+
+#indicado {
+  margin-top: 50px;
+  text-align: center; }
+  #indicado img {
+    height: 25rem; }
+  #indicado #hombre {
+    display: none; }
+
+#services {
+  margin-top: 50px;
+  text-align: center; }
+  #services .container {
+    padding: 75px; }
+  #services .col {
+    border: 1px solid black;
+    border-radius: 5%;
+    height: 15rem;
+    width: 25rem;
+    padding: 30px; }
+    #services .col h3 {
+      border-bottom: 1px solid black; }
+  #services button {
+    margin-top: 10px; }
+
+#socialMedia {
+  height: 15rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-content: center;
+  padding: 3em; }
+  #socialMedia .social {
+    display: none; }
+  #socialMedia img {
+    margin-left: 1em;
+    width: 75px;
+    margin: 10px;
+    transition: 0.75s;
+    border-radius: 50%; }
+
 .inputsUsuario {
   width: 70%;
   margin: 5px auto;

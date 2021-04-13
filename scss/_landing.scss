@@ -1,0 +1,59 @@
+#aboutUs{
+    .carousel{
+        img{
+            text-align: center;
+            height: 20rem;
+        }
+    }
+}
+
+#indicado{
+    margin-top: 50px;
+    text-align: center;
+    img{
+        height: 25rem;
+    }
+    #hombre{
+        display: none;  
+    }
+}
+
+#services{
+    margin-top: 50px;
+    text-align: center;
+    .container{
+        padding: 75px;
+    }
+    .col{
+        h3{
+            border-bottom: 1px solid black;
+        }
+        border: 1px solid black;
+        border-radius: 5%;
+        height: 15rem;
+        width: 25rem;
+        padding: 30px;
+    }
+    button{
+        margin-top: 10px;
+    }
+}
+
+#socialMedia{
+	height: 15rem;
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	align-content: center;
+	padding: 3em;
+    .social{
+        display: none;
+    }
+	img{
+		margin-left: 1em;
+		width: 75px;
+		margin: 10px;
+		transition: 0.75s;
+		border-radius: 50%;
+	}
+}
