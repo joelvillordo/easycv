@@ -1,15 +1,16 @@
 console.log("javascript cargado");
 
 //Datos identificatorios
+
 const datosPersonales = $("#datosPersonales");
 var datosUsuario = localStorage.getItem('persona');
 const usuario1 = JSON.parse(datosUsuario);
 
 function datosPrincipales(){
-    datosPersonales.innerHTML = `<h1>${usuario1.nombre}</h1>
+    datosPersonales.html(`<h1>${usuario1.nombre}</h1>
                                  <h2>${usuario1.profesion}</h2>
                                  <h3>Sobre Mí</h3>
-                                 <p>${usuario1.sobreMi}</p>`
+                                 <p>${usuario1.sobreMi}</p>`);
 }
 datosPrincipales();
 
@@ -19,12 +20,12 @@ var skillsUsuario = localStorage.getItem('habilidades');
 const habilidades1 = JSON.parse(skillsUsuario);
 
 function habilidadesUsuario(){
-    habilidades.innerHTML = `<h2>HABILIDADES</h2>
+    habilidades.html(`<h2>HABILIDADES</h2>
                                 <ul>
                                     <li>${habilidades1.hab1}</li>
                                     <li>${habilidades1.hab2}</li>
                                     <li>${habilidades1.hab3}</li>
-                                </ul>`
+                                </ul>`);
 }
 habilidadesUsuario();
 
@@ -34,14 +35,14 @@ var eduUsuario = localStorage.getItem('educacion');
 const educacion1 = JSON.parse(eduUsuario);
 
 function educacionUsuario(){
-    educacion.innerHTML = `<h2>EDUCACION</h2>
+    educacion.html(`<h2>EDUCACION</h2>
                             <ul>
                                 <li>
                                     <h3>${educacion1.instituto}</h3>
                                     <p>${educacion1.titulo}</p>
                                     <p>${educacion1.fecha}</p>
                                 </li>
-                            </ul>`
+                            </ul>`);
 }
 educacionUsuario();
 
@@ -51,7 +52,7 @@ var expUsuario = localStorage.getItem('experiencia');
 const experiencia1 = JSON.parse(expUsuario);
 
 function experienciaUsuario(){
-    experiencia.innerHTML = `<h2>EXPERIENCIA</h2>
+    experiencia.html(`<h2>EXPERIENCIA</h2>
                                 <ul>    
                                     <li>
                                         <h3>${experiencia1.puesto}</h3>
@@ -59,7 +60,7 @@ function experienciaUsuario(){
                                         <p class="fecha">${experiencia1.fecha}</p>
                                         <p>${experiencia1.tareas}</p>
                                     </li>
-                                </ul>`
+                                </ul>`);
 }
 experienciaUsuario();
 
@@ -69,7 +70,7 @@ var contactUsuario = localStorage.getItem('contacto');
 const contacto1 = JSON.parse(contactUsuario);
 
 function contactoUsuario(){
-    contacto.innerHTML =    `<div id="tel">
+    contacto.html( `<div id="tel">
                                 <img src="../img/telefono.png" alt="">
                                 <p>${contacto1.tel}</p>
                             </div>
@@ -80,6 +81,6 @@ function contactoUsuario(){
                             <div id="ubicacion">
                                 <img src="../img/ubicacion.png" alt="">
                                 <p>${contacto1.ubicacion}</p>
-                            </div>`
+                            </div>`);
 }
 contactoUsuario();

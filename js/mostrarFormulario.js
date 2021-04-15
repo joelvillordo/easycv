@@ -97,9 +97,9 @@ function mostrarEducation(){
 function subirSkills(e){
     e.preventDefault();
     let datosSkills = e.target;
-    var skill1 = $("skill1").val();
-    var skill2 = $("skill2").val();;
-    var skill3 = $("skill3").val();;
+    var skill1 = $("#skill1").val();
+    var skill2 = $("#skill2").val();
+    var skill3 = $("#skill3").val();
     const habilidades = new Habilidades(skill1, skill2, skill3);
     usuario.push(habilidades);
     mostrarEducation();

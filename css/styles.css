@@ -87,6 +87,10 @@ footer {
 .disabled {
   display: none; }
 
+a {
+  color: white;
+  text-decoration: none; }
+
 #modelo1 {
   width: 66%;
   margin: 5px auto;
