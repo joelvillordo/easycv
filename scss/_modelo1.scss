@@ -3,7 +3,8 @@ $gris: lightgrey;
 $celeste: #00BFFF;
 
 #modelo1{
-    width: 66%;
+    width: 100%;
+    max-width: 842px;
     margin: 5px auto;
     border: 1px solid black;
     padding: 10px;
@@ -15,6 +16,7 @@ li{
 //Header
 #foto{
     grid-area: foto;
+    max-width: 250px;
 }
 #datosPersonales{
     grid-area: datos;

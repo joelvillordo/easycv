@@ -62,6 +62,13 @@ function limpiarLocalStorage(a, b, c, d, e){
 
 limpiarLocalStorage('persona', 'habilidades', 'educacion', 'experiencia', 'contacto');
 
+//Funcion para ver ejemplo
+$("#ejemplo").click( () => {
+    // Abrir nuevo tab
+    var win = window.open('./modelos/ejemplo.html' , '_blank');
+    // Cambiar el foco al nuevo tab (punto opcional)
+    win.focus();
+});
 
 //Enviar datos de About y pasar a Skills
 function mostrarSkills(){
@@ -115,6 +122,8 @@ function mostrarWorks(){
     education.css('display', 'none');
     works.css('display', 'block');
 }
+//Funcion para agregar Educacion, mostrar en el html y guardar en el localStorage
+
 function subirEducation(e){
     e.preventDefault();
     const datosEducation = e.target;
@@ -179,8 +188,6 @@ function subirContact(e){
     //guardar en Local Storage   
     var contacto1 = JSON.stringify(contacto);
     localStorage.setItem('contacto', contacto1);
-    abrirNuevoTab('https://joelvillordo.github.io/easycv/modelos/modelo1.html');
+    abrirNuevoTab('./modelos/modelo1.html');
 }
 boton5.submit(subirContact);
-
-

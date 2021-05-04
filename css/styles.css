@@ -2,22 +2,22 @@
 body {
   font-family: 'Righteous', cursive; }
 
-header {
+#headerHome {
+  text-align: center;
   color: white;
   background-color: #007a79;
-  height: 15rem;
+  height: 10rem;
   display: flex;
-  align-content: center; }
-  header h1 {
-    text-align: center;
+  align-content: center;
+  justify-content: center; }
+  #headerHome h1 {
+    margin: auto auto;
     font-size: 3rem; }
-  header nav {
-    font-size: 1.25rem;
-    height: 3.5rem;
-    background-color: #007a79; }
 
-footer {
+#footerHome {
   background-color: #007a79; }
+  #footerHome div {
+    margin: auto auto; }
 
 #aboutUs .carousel img {
   text-align: center;
@@ -64,6 +64,7 @@ footer {
     border-radius: 50%; }
 
 .inputsUsuario {
+  text-align: center;
   width: 70%;
   margin: 5px auto;
   border: 1px solid black;
@@ -91,8 +92,14 @@ a {
   color: white;
   text-decoration: none; }
 
+#loading {
+  text-align: center; }
+  #loading img {
+    height: 300px; }
+
 #modelo1 {
-  width: 66%;
+  width: 100%;
+  max-width: 842px;
   margin: 5px auto;
   border: 1px solid black;
   padding: 10px;
@@ -102,7 +109,8 @@ li {
   list-style: none; }
 
 #foto {
-  grid-area: foto; }
+  grid-area: foto;
+  max-width: 250px; }
 
 #datosPersonales {
   grid-area: datos; }
@@ -160,3 +168,10 @@ footer {
     grid-area: email; }
   footer #ubicacion {
     grid-area: ubicacion; }
+
+@media (max-width: 576px) {
+  .inputsUsuario {
+    width: 100%;
+    margin: 0; }
+  main {
+    padding: 0; } }

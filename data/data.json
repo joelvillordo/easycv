@@ -1,0 +1,28 @@
+[
+    {
+        "nombre": "Jose Perez",
+        "profesion": "Abogado",
+        "sobreMi":"Soy una persona proactiva, me gusta aprender cosas nuevas y desafiarme constantemente"
+    },
+    {
+        "hab1":"Postgrado en Materia Penal",
+        "hab2":"Postgrado en Daños",
+        "hab3":"Curso de como hablar bien en publico"
+    },
+    {
+        "instituto":"Universidad Catolica de Salta",
+        "titulo":"Abogado",
+        "fecha":"Diciembre 2015"
+    },
+    {
+        "puesto":"Secretario",
+        "empresa":"Justicia Federal",
+        "fecha":"Desde Enero 2016",
+        "tareas":"Secretario del Juzgado Federal N°2, resolucion de conflictos judiciales"
+    },
+    {
+        "tel":"54911XXXXXXX",
+        "email":"joseperez@ejemplo.com.ar",
+        "ubicacion":"Argentina"
+    }
+]

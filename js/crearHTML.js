@@ -1,5 +1,14 @@
 console.log("javascript cargado");
 
+//Foto del Usuario
+const foto = $("#foto");
+var fotoUsuario = localStorage.getItem('photo');
+
+function cargarFoto(){
+    foto.attr('src', fotoUsuario);
+}
+cargarFoto();
+
 //Datos identificatorios
 
 const datosPersonales = $("#datosPersonales");

@@ -13,62 +13,18 @@
     
 </head>
 <body>
-    <header>
+    <header id="headerHome">
         <h1>EasyCV</h1>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container-fluid">   
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Social Media</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
     </header>
     <main>
         <section class="inputsUsuario">
-            <div class="card" style="width: 18rem;">
-                <img src="" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Modelo 1</h5>
-                  <p class="card-text">Modelo clásico. Sencillo, estilo conservador. Datos principales.</p>
-                  <a href="#" class="btn btn-primary">Elegir</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Modelo 2</h5>
-                  <p class="card-text">Diseño moderno. Con un poco mas de color y estilo.</p>
-                  <a href="#" class="btn btn-primary">Proximamente</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Modelo 3</h5>
-                  <p class="card-text">Otra alternativa moderna. Cambio de paleta de colores.</p>
-                  <a href="#" class="btn btn-primary">Proximamente</a>
-                </div>
-            </div>
+            <h2>¡Arranquemos!</h2>
+            <input type="submit" id="ejemplo" value="Ver un ejemplo" class="btn btn-primary">
         </section>
         <section class="inputsUsuario">
             <div class="container active" id="aboutMe">
                 <form action="#" id="form1">
+                    <input type="file" name="profilePhoto" id="profilePhoto" accept=".jpg, .png, .jpeg">
                     <label for="name">Nombre y Apellido:</label>
                     <input type="text" id="name" class="form-control" placeholder="Sergio Acosta">
                     <label for="profession">Profesion:</label>
@@ -129,7 +85,7 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer id="footerHome">
       <div>
           <p>Creado por Joel Villordo</p>
       </div>
@@ -140,5 +96,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <!--Mis Scripts-->
     <script src="js/mostrarFormulario.js"></script>
+    <script src="js/ejemplo.js"></script>
+    <script src="js/subirFoto.js"></script>
 </body>
 </html>
