@@ -110,7 +110,8 @@ li {
 
 #foto {
   grid-area: foto;
-  max-width: 250px; }
+  max-width: 250px;
+  max-height: 150px; }
 
 #datosPersonales {
   grid-area: datos; }
