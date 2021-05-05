@@ -75,6 +75,7 @@ function mostrarSkills(){
     //Escondo el formulario de about y muestro el siguiente
     aboutMe.css('display', 'none');
     skills.css('display', 'block');
+    $("#paso2").css('background-color', '#007a79');
 }
 function subirAbout(e) {
     //Anulo la recarga de la pagina
@@ -99,6 +100,7 @@ boton1.submit(subirAbout);
 function mostrarEducation(){
     skills.css('display', 'none');
     education.css('display', 'block');
+    $("#paso3").css('background-color', '#007a79');
 }
 //Mismo funcionamiento para guardar las habilidades ingresadas por el usuario
 function subirSkills(e){
@@ -121,6 +123,7 @@ boton2.submit(subirSkills);
 function mostrarWorks(){
     education.css('display', 'none');
     works.css('display', 'block');
+    $("#paso4").css('background-color', '#007a79');
 }
 //Funcion para agregar Educacion, mostrar en el html y guardar en el localStorage
 
@@ -144,6 +147,7 @@ boton3.submit(subirEducation);
 function mostrarContact(){
     works.css('display', 'none');
     contact.css('display', 'block');
+    $("#paso5").css('background-color', '#007a79');
 }
 function subirWorks(e){
     e.preventDefault();
@@ -168,12 +172,13 @@ function mostrarLoading(){
     loading.css('display', 'block');
 }
 //funcion para abrir una nueva tab con el cv armado
-function abrirNuevoTab(url) {
+function abrirNuevoTab() {
     // Abrir nuevo tab
-    var win = window.open(url , '_blank');
-    // Cambiar el foco al nuevo tab (punto opcional)
-    win.focus();
+    var win = window.open('./modelos/modelo1.html');
+    $("#cargando").css('display', 'none');
+    $("#agradecimiento").css('display', 'block');
   }
+
 
 function subirContact(e){
     e.preventDefault();
@@ -188,6 +193,6 @@ function subirContact(e){
     //guardar en Local Storage   
     var contacto1 = JSON.stringify(contacto);
     localStorage.setItem('contacto', contacto1);
-    abrirNuevoTab('./modelos/modelo1.html');
+    setTimeout(abrirNuevoTab, 2000);    
 }
 boton5.submit(subirContact);

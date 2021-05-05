@@ -85,6 +85,19 @@ body {
     margin: 0 auto;
     display: block; }
 
+#avance {
+  padding: 0;
+  border: none; }
+  #avance .avanceFormulario {
+    margin: 0;
+    border-radius: 20%;
+    display: inline-block;
+    border: 1.5px solid #007a79;
+    height: 10px;
+    width: 15%; }
+  #avance .completo {
+    background-color: #007a79; }
+
 .disabled {
   display: none; }
 
@@ -96,6 +109,8 @@ a {
   text-align: center; }
   #loading img {
     height: 300px; }
+  #loading #gracias {
+    display: none; }
 
 #modelo1 {
   width: 100%;
@@ -111,7 +126,8 @@ li {
 #foto {
   grid-area: foto;
   max-width: 250px;
-  max-height: 150px; }
+  max-height: 150px;
+  margin: auto auto; }
 
 #datosPersonales {
   grid-area: datos; }

@@ -21,13 +21,21 @@
             <h2>¡Arranquemos!</h2>
             <input type="submit" id="ejemplo" value="Ver un ejemplo" class="btn btn-primary">
         </section>
+        <section class="inputsUsuario" id="avance">
+            <div class="avanceFormulario completo" id="paso1"></div>
+            <div class="avanceFormulario" id="paso2"></div>
+            <div class="avanceFormulario" id="paso3"></div>
+            <div class="avanceFormulario" id="paso4"></div>
+            <div class="avanceFormulario" id="paso5"></div>
+        </section>
         <section class="inputsUsuario">
             <div class="container active" id="aboutMe">
                 <form action="#" id="form1">
-                    <input type="file" name="profilePhoto" id="profilePhoto" accept=".jpg, .png, .jpeg">
+                    <label for="profilePhoto">Subí tu Foto Carnet:</label>
+                    <input type="file" name="profilePhoto" id="profilePhoto" accept=".jpg, .png, .jpeg" value="Subí tu foto">
                     <label for="name">Nombre y Apellido:</label>
                     <input type="text" id="name" class="form-control" placeholder="Sergio Acosta">
-                    <label for="profession">Profesion:</label>
+                    <label for="profession">Profesión:</label>
                     <input type="text" id="profession" class="form-control" placeholder="Abogado">
                     <label for="description">Sobre mí:</label>
                     <textarea class="form-control" name="description" id="description" cols="30" rows="5" placeholder="Breve descripción sobre mí."></textarea>
@@ -77,11 +85,12 @@
                     <input type="text" id="email" class="form-control" placeholder="nombre@ejemplo.com">
                     <label for="location">Ubicación:</label>
                     <input type="text" id="location" class="form-control" placeholder="Argentina">
-                    <input type="submit" id="boton5" value="Siguiente" class="btn btn-primary">
+                    <input type="submit" id="boton5" value="Finalizar" class="btn btn-primary">
                 </form>
             </div>
             <div class="container disabled" id="loading">
-                <p>Cargando...</p>
+                <img src="img/loading.gif" id="cargando" alt="Loading...">
+                <p class="disabled" id="agradecimiento">¡Gracias por elegirnos!</p>
             </div>
         </section>
     </main>
