@@ -11,6 +11,7 @@ const boton3 = $("#form3");
 const boton4 = $("#form4");
 const boton5 = $("#form5");
 
+alert("Bienvenidos a Easy CV, completá el formulario y en 5 simples pasos... ¡obtené tu curriculum!");
 //Variables, Objetos, Arrays
 let usuario = [];
 
